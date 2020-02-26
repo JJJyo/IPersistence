@@ -1,0 +1,11 @@
+<mapper>
+
+    <select id="findAll" resultType="prodcut">
+        select * from prodcut
+    </select>
+
+    <select id="findByCondition" resultType="prodcut" paramterType="prodcut">
+        select * from user where id = #{id} and username = #{username}
+    </select>
+
+</mapper>
